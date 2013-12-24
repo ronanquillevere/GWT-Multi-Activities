@@ -8,5 +8,6 @@ public class Multiactivities implements EntryPoint {
 
     public void onModuleLoad() {
         RootLayoutPanel.get().add(new Label("Hello World"));
+
     }
 }
