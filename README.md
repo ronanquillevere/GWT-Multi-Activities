@@ -31,6 +31,13 @@ Here is my layout
 
 ## Implementation
 
+### RootView (and Presenter)
+To code the basic layout and the different regions, I have created a RootView and an associated RootPresenter. Each region will be a kind of container where I will be able to insert an activity view. So it is natural that it implements the HasOneWidget interface.
+
+    public interface RegionContainer extends HasOneWidget, IsWidget
+    
+The RootView will contain all the RegionContainers (North, West etc...). Its responsibility will be to instantiate the view containers and set the right parameters (the region etc.)
+
 ### Activities
 
 Each region should have its own activity manager. The north region will be initialized lie this 
@@ -38,9 +45,7 @@ Each region should have its own activity manager. The north region will be initi
     ActivityManager northActivityManager = new ActivityManager(injector.getNorthActivityMapper(), eventBus);
     northActivityManager.setDisplay(rootPresenter.getView().getRegion(Region.North));
     
-Each region will have a specific ActivityMapper. The activity mapper will be responsible for creating an activity for one place for a specific region. Example the NorthActivityMapper will return the right activity for the north region depending if we are on Place1 or Place2. The implementation of this Mapper will be based on a place [visitor](http://en.wikipedia.org/wiki/Visitor_pattern) (a kind of switch on class type)
-
-
+Each region will have a specific ActivityMapper. The activity mapper will be responsible for creating an activity for one place for a specific region. Example the NorthActivityMapper will return the right activity for the north region depending if we are on Place1 or Place2. The implementation of this mapper will be based on a place [visitor](http://en.wikipedia.org/wiki/Visitor_pattern) (a kind of switch on class type).
 
 ### Place
 
