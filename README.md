@@ -43,7 +43,7 @@ Here is my layout
 ### Activities and Places 
 
 Just a quick diagram to remind you the major responsibilities when go to a new place (called NewPlace in the diagram). 
-[placediagram](http://2.bp.blogspot.com/-xDBUCS1gL0E/Ufsj7w8avPI/AAAAAAAAKcQ/K5I0ka1zttQ/s1600/SimpleActivityPlaceDiagram.png)
+![placediagram](http://2.bp.blogspot.com/-xDBUCS1gL0E/Ufsj7w8avPI/AAAAAAAAKcQ/K5I0ka1zttQ/s1600/SimpleActivityPlaceDiagram.png)
 
 ### Place
 
