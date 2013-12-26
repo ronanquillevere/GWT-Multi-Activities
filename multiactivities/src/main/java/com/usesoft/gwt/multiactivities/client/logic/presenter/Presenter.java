@@ -1,4 +1,4 @@
-package com.usesoft.gwt.multiactivities.client.presenter;
+package com.usesoft.gwt.multiactivities.client.logic.presenter;
 
 import com.google.web.bindery.event.shared.EventBus;
 

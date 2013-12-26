@@ -3,21 +3,21 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
 	xmlns:m="urn:import:com.usesoft.gwt.multiactivities.client.view.region">
 	<ui:style src="region.css" />
-	<g:DockLayoutPanel unit='EM'>
+	<g:DockLayoutPanel unit='EM' ui:field="rootContainer">
 	    <g:north size='2'>
-	    	<m:RegionContainter ui:field="northRegionContainer" styleName="{style.northRegion}"></m:RegionContainter>
+	    	<m:RegionContainer ui:field="northRegionContainer" styleName="{style.northRegion}"></m:RegionContainer>
 	    </g:north>
 	    <g:south size='2'>
-	    	<m:RegionContainter ui:field="southRegionContainer" styleName="{style.southRegion}"></m:RegionContainter>
+	    	<m:RegionContainer ui:field="southRegionContainer" styleName="{style.southRegion}"></m:RegionContainer>
 	    </g:south>
 	    <g:west size='2'>
-	    	<m:RegionContainter ui:field="westRegionContainer" styleName="{style.westRegion}"></m:RegionContainter>
+	    	<m:RegionContainer ui:field="westRegionContainer" styleName="{style.westRegion}"></m:RegionContainer>
 	    </g:west>
 	    <g:east size='2'>
-	    	<m:RegionContainter ui:field="eastRegionContainer" styleName="{style.eastRegion}"></m:RegionContainter>
+	    	<m:RegionContainer ui:field="eastRegionContainer" styleName="{style.eastRegion}"></m:RegionContainer>
 	    </g:east>
 	    <g:center>
-	    	<m:RegionContainter ui:field="centerRegionContainer" styleName="{style.centerRegion}"></m:RegionContainter>
+	    	<m:RegionContainer ui:field="centerRegionContainer" styleName="{style.centerRegion}"></m:RegionContainer>
 	    </g:center>
 	</g:DockLayoutPanel>
 </ui:UiBinder> 

@@ -1,4 +1,4 @@
-package com.usesoft.gwt.multiactivities.client.presenter;
+package com.usesoft.gwt.multiactivities.client.logic.presenter;
 
 import com.usesoft.gwt.multiactivities.client.view.rootlayout.RootView;
 
