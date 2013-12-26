@@ -40,6 +40,11 @@ Here is my layout
 
 ## Implementation
 
+### Activities and Places 
+
+Just a quick diagram to remind you the major responsibilities when go to a new place (called NewPlace in the diagram). 
+[placediagram](http://2.bp.blogspot.com/-xDBUCS1gL0E/Ufsj7w8avPI/AAAAAAAAKcQ/K5I0ka1zttQ/s1600/SimpleActivityPlaceDiagram.png)
+
 ### Place
 
 I created 2 places : Place1 and Place2. For each place the layout will be different. In place 2 I will hide the north region by simply not creating any activity related to this region.
