@@ -10,11 +10,18 @@ Maybe, if you have separated your presenter interface from the activity, you wil
 
 Whatever your implementation, your design lack some modularity. So Thomas Broyer came up with what I beleive is a good idea which was described in [this article](http://blog.ltgt.net/gwt-21-activities-nesting-yagni/).
 
-In this project I have tried to implement Thomas idea, keeping it as simple as possible.
+In this project I have tried to implement Thomas idea, keeping it as simple as possible. Nevertheless to understand the code (which is probably far from being perfect) you will need a good knowledge of Activities and Places, MVP, Injection with GIN. Plus you need to understand Thomas idea. You can have a look to my blog for some article on Activities and Places or have a look to the various questions on StackOverflow.
+
+
+http://wpamm.blogspot.fr/2013/03/gwt-activity-place-introduction.html
+
+http://wpamm.blogspot.fr/2013/08/nested-activities-alternative-with.html
+
+http://stackoverflow.com/questions/tagged/gwt-activities
 
 ## Layout
 
-I this example I stick with a simple layout with only 5 regions (North, South, East, West, Center). They correspond to a DockLayoutPanel regions wich will keep the code simple. Nevertheless nothing prevents to use pure LayoutPanel to build a more complex layout or to nest another DockLayoutPanel inside the Center region for example.
+In this example I stick with a simple layout with only 5 regions (North, South, East, West, Center). They correspond to a DockLayoutPanel regions wich will keep the code simple. Nevertheless nothing prevents to use pure LayoutPanel to build a more complex layout or to nest another DockLayoutPanel inside the Center region for example.
 
 Here is my layout
 
@@ -37,6 +44,8 @@ To code the basic layout and the different regions, I have created a RootView an
     public interface RegionContainer extends HasOneWidget, IsWidget
     
 The RootView will contain all the RegionContainers (North, West etc...). Its responsibility will be to instantiate the view containers and set the right parameters (the region etc.)
+
+But the most important responsibility will be to hide the region
 
 ### Activities
 
