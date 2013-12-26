@@ -1,7 +1,23 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui">
-	<g:HTMLPanel>
-		Hello,
-	</g:HTMLPanel>
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:m="urn:import:com.usesoft.gwt.multiactivities.client.view.region">
+	<ui:style src="region.css" />
+	<g:DockLayoutPanel unit='EM'>
+	    <g:north size='2'>
+	    	<m:RegionContainter ui:field="northRegionContainer" styleName="{style.northRegion}"></m:RegionContainter>
+	    </g:north>
+	    <g:south size='2'>
+	    	<m:RegionContainter ui:field="southRegionContainer" styleName="{style.southRegion}"></m:RegionContainter>
+	    </g:south>
+	    <g:west size='2'>
+	    	<m:RegionContainter ui:field="westRegionContainer" styleName="{style.westRegion}"></m:RegionContainter>
+	    </g:west>
+	    <g:east size='2'>
+	    	<m:RegionContainter ui:field="eastRegionContainer" styleName="{style.eastRegion}"></m:RegionContainter>
+	    </g:east>
+	    <g:center>
+	    	<m:RegionContainter ui:field="centerRegionContainer" styleName="{style.centerRegion}"></m:RegionContainter>
+	    </g:center>
+	</g:DockLayoutPanel>
 </ui:UiBinder> 
