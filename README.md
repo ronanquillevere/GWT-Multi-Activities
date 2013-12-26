@@ -42,7 +42,7 @@ Here is my layout
 
 ### Activities and Places 
 
-Just a quick diagram to remind you the major responsibilities when go to a new place (called NewPlace in the diagram). 
+Just a quick diagram to remind you the major responsibilities when you go to a new place (called NewPlace in the diagram). 
 ![placediagram](http://2.bp.blogspot.com/-xDBUCS1gL0E/Ufsj7w8avPI/AAAAAAAAKcQ/K5I0ka1zttQ/s1600/SimpleActivityPlaceDiagram.png)
 
 ### Place
@@ -88,5 +88,5 @@ Each region should have its own activity manager. On each place, each region sho
     ActivityManager northActivityManager = new ActivityManager(injector.getNorthActivityMapper(), eventBus);
     northActivityManager.setDisplay(rootPresenter.getView().getRegion(Region.North));
     
-Each region will have a specific ActivityMapper. The activity mapper will be responsible for creating an activity for one place for a specific region. Example the NorthActivityMapper will return the right activity for the north region depending if we are on Place1 or Place2 (see below). The implementation of this mapper will be based on a place [visitor](http://en.wikipedia.org/wiki/Visitor_pattern) (a kind of switch on class type).
+Each region will have a specific ActivityMapper. The activity mapper will be responsible for creating an activity for one place for a specific region. Example the NorthActivityMapper will return the right activity for the north region depending if we are on Place1 or Place2. The implementation of this mapper will be based on a place [visitor](http://en.wikipedia.org/wiki/Visitor_pattern) (a kind of switch on class type).
 
