@@ -21,16 +21,42 @@ I this example I stick with a simple layout with only 5 regions (North, South, E
 
 Here is my layout
 
-               _____________________________
-               |          North            |
-               _____________________________
-               |        |         |        |   
-               |  West  | Center  |  East  | 
-               |        |         |        |
-               _____________________________
-               |           South           |
-               _____________________________
+    _____________________________
+    |          North            |
+    _____________________________
+    |        |         |        |   
+    |  West  | Center  |  East  | 
+    |        |         |        |
+    _____________________________
+    |           South           |
+    _____________________________
 
 
 Implementation
 ---------------
+
+Place
+
+I created 2 places : Place1 and Place2. For each place the layout will be different. In place 2 I will hide the north region by simply not creating any activity related to this region.
+
+Place 1 layout
+
+    _____________________________
+    |          North            |
+    _____________________________
+    |        |         |        |   
+    |  West  | Center  |  East  | 
+    |        |         |        |
+    _____________________________
+    |           South           |
+    _____________________________
+
+Place 2 layout
+
+    _____________________________
+    |        |         |        |   
+    |  West  | Center  |  East  | 
+    |        |         |        |
+    _____________________________
+    |           South           |
+    _____________________________
