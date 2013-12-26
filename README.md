@@ -6,11 +6,11 @@ An example of GWT client application with multiple activities per place. Idea ta
 Introduction
 ------------
 
-When building a complex application with Activities and Places, quickly you start nesting Activities inside each others to handle each zone/region of your page. 
+When building a complex application with [Activities and Places](http://www.gwtproject.org/doc/latest/DevGuideMvpActivitiesAndPlaces.html), quickly you start nesting activities inside each others to handle each zone/region of your page. 
 
-Maybe, if you have separated your presenter interface from the activity, you will have only one activity and multiple nested presenter inside this activity. 
+Maybe, if you have separated your presenter interface from the activity, you will have only one activity and multiple nested presenters inside this activity. 
 
-Whatever your implementation, your design lack some modularity. So Thomas Broyer came up with what I beleive is a good idea which was described in this article.
+Whatever your implementation, your design lack some modularity. So Thomas Broyer came up with what I beleive is a good idea which was described in [this article](http://blog.ltgt.net/gwt-21-activities-nesting-yagni/).
 
 In this project I have tried to implement Thomas idea, keeping it as simple as possible.
 
