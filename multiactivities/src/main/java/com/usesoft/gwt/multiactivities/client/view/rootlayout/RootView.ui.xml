@@ -10,10 +10,10 @@
 	    <g:south size='2'>
 	    	<m:RegionContainer ui:field="southRegionContainer" styleName="{style.southRegion}"></m:RegionContainer>
 	    </g:south>
-	    <g:west size='2'>
+	    <g:west size='8'>
 	    	<m:RegionContainer ui:field="westRegionContainer" styleName="{style.westRegion}"></m:RegionContainer>
 	    </g:west>
-	    <g:east size='2'>
+	    <g:east size='6'>
 	    	<m:RegionContainer ui:field="eastRegionContainer" styleName="{style.eastRegion}"></m:RegionContainer>
 	    </g:east>
 	    <g:center>

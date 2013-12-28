@@ -1,0 +1,9 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:m="urn:import:com.usesoft.gwt.multiactivities.client.view.region">
+	<g:VerticalPanel>
+	<g:Button ui:field="place1Button" text="go to place 1"></g:Button>
+	<g:Button ui:field="place2Button" text="go to place 2"></g:Button>
+	</g:VerticalPanel>
+</ui:UiBinder> 
