@@ -90,10 +90,15 @@ Each region should have its own activity manager. On each place, each region sho
     
 Each region will have a specific ActivityMapper. The activity mapper will be responsible for creating an activity for one place for a specific region. Example the NorthActivityMapper will return the right activity for the north region depending if we are on Place1 or Place2. The implementation of this mapper will be based on a place [visitor](http://en.wikipedia.org/wiki/Visitor_pattern) (a kind of switch on class type).
 
+#### West Activity
+
+Inside the west region I create an activity that contains 2 buttons to navigate towards place1 or place2. This activity is a singleton (defined in the injection Module). So on place1 or place2 the WestActivityMapper will return the same instance of activity. It can be usefull if in some of your region, whatever the place the activity is always the same.
+
 ### Result
 
 Here is the result, you can see the url in the screenshots. In Place2 there is no North region. The west activity enables you to navigate from place1 to Place2.
 
-[](./Place1.png)
+[Place1](./Place1.png)
 
-[](./Place2.png)
+[Place2](./Place2.png)
+
