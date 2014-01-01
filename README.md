@@ -98,7 +98,7 @@ Inside the west region I create an activity that contains 2 buttons to navigate 
 
 Here is the result, you can see the url in the screenshots. In Place2 there is no North region. The west activity enables you to navigate from place1 to Place2.
 
-[Place1]!(./Place1.png)
+![Place1](./Place1.png)
 
-[Place2]!(./Place2.png)
+![Place2](./Place2.png)
 
